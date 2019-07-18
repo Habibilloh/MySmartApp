@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/last"
+    tools:context=".Help">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/ox"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="The Game also known as noughts and crosses or Xs and Os is very interesting and logical.It is Youngsters' very favourite game. This game is for two players, X and O, who take turns marking the spaces in a 3×3 grid. In order to succeed the players should try to place three of their marks in a horizontal, vertical, or diagonal row wins the game. Otherwise, the game ends with draw."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:background="@android:color/transparent"
+        android:text="back"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

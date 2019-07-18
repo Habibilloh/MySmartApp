@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebacks"
+    tools:context=".Games">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Games Menu"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/tic"
+        android:id="@+id/tictactoe"
+        android:paddingBottom="20dp" />
+
+    <TextView
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:layout_marginStart="22dp"
+        android:text="Tic Tac Toe"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="19dp" />
+
+
+    <Button
+        android:id="@+id/b_game"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/braingameicon"
+        android:paddingBottom="20dp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="300dp"
+        android:layout_marginEnd="0dp"
+        android:text="Mind Reader"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="19dp" />
+
+
+
+
+</RelativeLayout>

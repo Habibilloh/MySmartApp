@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/last"
+    tools:context=".MainGameBoard">
+    <TableLayout
+
+        android:id="@+id/mainBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/turn"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/turn"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="33dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:nestedScrollingEnabled="false"
+        android:padding="10dp">
+
+        <TableRow
+            android:id="@+id/row0"
+            style="@style/TableRow"
+            android:background="@color/black">
+
+            <TextView
+                style="@style/LeftCell"
+                android:layout_column="0"
+                android:background="#fbfbfb"></TextView>
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/MiddleCell"
+                android:layout_column="1"
+                android:background="#fbfbfb">
+
+            </TextView>
+
+            <TextView
+                style="@style/RightCell"
+                android:layout_column="2"
+                android:background="#fbfbfb">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            style="@style/TableRow"
+            android:background="@color/black">
+
+            <TextView
+                style="@style/LeftCell"
+                android:layout_column="0"
+                android:background="#fbfbfb">
+
+            </TextView>
+
+            <TextView
+                style="@style/MiddleCell"
+                android:layout_column="1"
+                android:background="#fbfbfb">
+
+            </TextView>
+
+            <TextView
+                style="@style/RightCell"
+                android:layout_column="2"
+                android:background="#fbfbfb">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            style="@style/TableRow"
+            android:background="@color/black">
+
+            <TextView
+                style="@style/LeftCell"
+                android:layout_column="0"
+                android:background="#fbfbfb">
+
+            </TextView>
+
+            <TextView
+                style="@style/MiddleCell"
+                android:layout_column="1"
+                android:background="#fbfbfb">
+
+            </TextView>
+
+            <TextView
+                style="@style/RightCell"
+                android:layout_column="2"
+                android:background="#fbfbfb">
+
+            </TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mainBoard"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Turn: "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/resetGame"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/turn"
+        android:layout_alignStart="@+id/turn"
+        android:layout_below="@+id/turn"
+        android:layout_marginTop="12dp"
+        android:layout_weight="0.19"
+        android:background="#B0443330"
+        android:text="Reset Match"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/backHome"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/resetGame"
+        android:layout_alignBottom="@+id/resetGame"
+        android:layout_alignEnd="@+id/mainBoard"
+        android:layout_alignRight="@+id/mainBoard"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="#B0443330"
+        android:onClick="onClick"
+        android:text="back"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,2 +1,2 @@
 # MySmartApp
-This is android application
+This is android application. I have developed this application by using java programming language on android studio tool. In this application I have planned to organize categorized applications inside the only an app. The categories are as below: Documentations, Multimedia, Google Services, and Game all includes related applications to each categories. The app screenshots are available in the repository file with all source codes.  
